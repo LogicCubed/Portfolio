@@ -1,7 +1,7 @@
-export default function Home() {
+export default function Other() {
   return (
     <div className="text-white">
-      Home Page
+      Other
     </div>
   );
 }
