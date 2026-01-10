@@ -3,9 +3,9 @@ export default function ThreeDWork() {
     <div
       className="
         text-white 
-        bg-[url('/images/dragon_diorama.png')] 
+        bg-[url('/images/project_cards/dragon_diorama.png')] 
         bg-cover bg-center w-full h-screen
-        filter blur-sm grayscale
+        filter blur-sm grayscale mb-75
       "
     >
       <div className="p-8 text-2xl font-bold">

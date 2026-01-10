@@ -1,6 +1,5 @@
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-import { Sidebar } from "@/components/sidebar";
 
 type Props = {
   children: React.ReactNode;
@@ -9,14 +8,13 @@ type Props = {
 const HomeLayout = ({ children }: Props) => {
   return (
     <div className="min-h-screen flex flex-col">
-        <Header />
+        <header className="sticky top-0 z-20">
+          <Header />
+        </header>
         <main className="flex-1">
             {children}
         </main>
         <Footer />
-        <div className="fixed top-0 left-0 h-full w-full z-50 pointer-events-none">
-            <Sidebar />
-        </div>
     </div>
   );
 };

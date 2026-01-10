@@ -34,7 +34,7 @@ export default function ProjectCard({
         backgroundColor: !imageUrl ? '#000' : undefined,
       }}
     >
-      {/* Background image */}
+
       {imageUrl && (
         <div
           className="
@@ -49,19 +49,18 @@ export default function ProjectCard({
         />
       )}
 
-      {/* Dark overlay on hover */}
-      <div className="
-        absolute inset-0
-        bg-black/40
-        opacity-0
-        transition-opacity duration-300
-        group-hover:opacity-20
-      " />
+      <div
+        className="
+          absolute inset-0
+          bg-black/60
+          opacity-0
+          transition-opacity duration-300
+          group-hover:opacity-100
+        "
+      />
 
-      {/* Bottom gradient overlay for legibility */}
-      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/70 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
 
-      {/* Idle state */}
       <div
         className="
           absolute inset-0 p-4
@@ -74,7 +73,6 @@ export default function ProjectCard({
         <p className="text-white/70 text-sm mt-1">{shortDescription}</p>
       </div>
 
-      {/* Hover state */}
       <div
         className="
           absolute inset-0 p-4
@@ -90,7 +88,6 @@ export default function ProjectCard({
         </p>
       </div>
 
-      {/* Hover button */}
       <a
         href={githubUrl}
         target="_blank"
