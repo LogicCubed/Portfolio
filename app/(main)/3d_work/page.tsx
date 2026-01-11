@@ -1,16 +1,15 @@
+import Slideshow from "@/components/slideshow";
+
 export default function ThreeDWork() {
   return (
-    <div
-      className="
-        text-white 
-        bg-[url('/images/project_cards/dragon_diorama.png')] 
-        bg-cover bg-center w-full h-screen
-        filter blur-sm grayscale mb-75
-      "
-    >
-      <div className="p-8 text-2xl font-bold">
-        3D Work
-      </div>
+    <div className="mb-75">
+        <Slideshow
+          slides={[
+            { image: "/images/3d_renders/dragon_diorama.png" },
+            { image: "/images/3d_renders/t60_helmet.png" },
+            { image: "/images/3d_renders/offroad_diorama.png" },
+          ]}
+        />
     </div>
   );
 }
