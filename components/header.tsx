@@ -20,7 +20,7 @@ export const Header = () => {
         {label}
         <span
           className={`
-            absolute left-0 bottom-0 h-[4px] bg-[#f0075c] rounded-full
+            absolute left-0 bottom-0 h-[6px] bg-[#f0075c] rounded-full
             transition-all duration-300 ease-out
             ${active ? "w-full" : "w-0"} 
             group-hover:w-full
@@ -36,7 +36,7 @@ export const Header = () => {
         <div className="flex items-center space-x-6 md:space-x-12 w-full md:w-auto">
           <Image src="/images/logo.png" alt="Logo" width={64} height={64} />
 
-          <nav className="hidden md:flex space-x-12 text-white font-bold uppercase text-lg">
+          <nav className="hidden md:flex space-x-12 text-white font-extrabold uppercase text-lg">
             {link("/", "Home")}
             {link("/development", "Development")}
             {link("/3d_work", "3D Work")}

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Johann Ocuaman | Web & 3D Developer",
+  title: "Johann Ocuaman | Developer & 3D Artist",
   description: "Interactive portfolio",
 };
 
