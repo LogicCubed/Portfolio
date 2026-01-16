@@ -41,7 +41,7 @@ export default function Diorama({ modelPath }: DioramaProps) {
 
     // Load Model
     const loader = new GLTFLoader();
-    let model: any = null;
+    let model: THREE.Group | null = null;
 
     loader.load(modelPath, (gltf: GLTF) => {
       model = gltf.scene;

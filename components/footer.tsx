@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { ContactButton } from "./ui/contact-button";
-import { GithubIcon, LinkedinIcon, TestTubeIcon, TwitterIcon, YoutubeIcon } from "lucide-react";
+import { GithubIcon, LinkedinIcon, TwitterIcon, YoutubeIcon } from "lucide-react";
 
 export const Footer = () => {
   return (

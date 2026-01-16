@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -13,7 +14,7 @@ export const Header = () => {
     const active = pathname === href;
 
     return (
-      <a
+      <Link
         href={href}
         className="relative group px-3 py-2 hidden md:inline-block"
       >
@@ -26,7 +27,7 @@ export const Header = () => {
             group-hover:w-full
           `}
         />
-      </a>
+      </Link>
     );
   };
 
@@ -55,21 +56,11 @@ export const Header = () => {
 
       {isOpen && (
         <nav className="flex flex-col md:hidden bg-[#111112] text-white font-bold uppercase text-lg px-4 pb-4 space-y-2">
-          <a href="/" className="px-2 py-1 w-max">
-            Home
-          </a>
-          <a href="/development" className="px-2 py-1 w-max">
-            Development
-          </a>
-          <a href="/3d_work" className="px-2 py-1 w-max">
-            3D Work
-          </a>
-          <a href="/ventures" className="px-2 py-1 w-max">
-            Ventures
-          </a>
-          <a href="/about_me" className="px-2 py-1 w-max">
-            About Me
-          </a>
+          <Link href="/" className="px-2 py-1 w-max">Home</Link>
+          <Link href="/development" className="px-2 py-1 w-max">Development</Link>
+          <Link href="/3d_work" className="px-2 py-1 w-max">3D Work</Link>
+          <Link href="/ventures" className="px-2 py-1 w-max">Ventures</Link>
+          <Link href="/about_me" className="px-2 py-1 w-max">About Me</Link>
         </nav>
       )}
     </header>

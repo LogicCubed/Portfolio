@@ -1,15 +1,11 @@
-// Core Three.js module
-declare module "three";
-
-// GLTFLoader example module
 declare module "three/examples/jsm/loaders/GLTFLoader.js" {
-  import { Group } from "three";
+  import { Group, Camera, AnimationClip } from "three";
 
   export type GLTF = {
     scene: Group;
     scenes: Group[];
-    cameras: any[];
-    animations: any[];
+    cameras: Camera[];
+    animations: AnimationClip[];
   };
 
   export class GLTFLoader {
