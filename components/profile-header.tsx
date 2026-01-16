@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Download, Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import { ContactButton } from "./ui/contact-button";
 
 export default function ProfileHeader() {
@@ -49,6 +49,12 @@ export default function ProfileHeader() {
             Resume <Download className="w-4 h-4 sm:w-5 sm:h-5" />
           </a>
         </div>
+
+        <p className="text-gray-300 flex items-center gap-2 mt-2 justify-center sm:justify-start">
+          <MapPin className="w-4 h-4" />
+          Based in Los Angeles
+        </p>
+
       </div>
 
     </div>

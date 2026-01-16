@@ -5,7 +5,7 @@ import { GithubIcon, LinkedinIcon, TestTubeIcon, TwitterIcon, YoutubeIcon } from
 
 export const Footer = () => {
   return (
-    <footer className="relative bg-[#111112] text-white">
+    <footer className="relative bg-[#0a0a0a] text-white">
       <div className="absolute top-0 left-0 w-full -translate-y-full pointer-events-none">
         <Image
           src="/wave.svg"
@@ -40,7 +40,6 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Ventures */}
           <div>
             <h3 className="font-bold text-lg mb-4">Ventures</h3>
             <ul className="space-y-2">
@@ -48,7 +47,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Resources */}
           <div>
             <h3 className="font-bold text-lg mb-4">Resources</h3>
             <ul className="space-y-2">
@@ -57,7 +55,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Other */}
           <div>
             <h3 className="font-bold text-lg mb-4">Other</h3>
             <ul className="space-y-2">

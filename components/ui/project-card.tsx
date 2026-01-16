@@ -1,10 +1,11 @@
-import { Github } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 
 type ProjectCardProps = {
   title: string;
   shortDescription: string;
   longDescription: string;
-  githubUrl: string;
+  githubUrl?: string;
+  projectUrl?: string;
   imageUrl?: string;
 };
 
@@ -13,6 +14,7 @@ export default function ProjectCard({
   shortDescription,
   longDescription,
   githubUrl,
+  projectUrl,
   imageUrl,
 }: ProjectCardProps) {
   return (
@@ -34,7 +36,6 @@ export default function ProjectCard({
         backgroundColor: !imageUrl ? '#000' : undefined,
       }}
     >
-
       {imageUrl && (
         <div
           className="
@@ -76,51 +77,57 @@ export default function ProjectCard({
       <div
         className="
           absolute inset-0 p-4
-          flex flex-col
+          flex flex-col justify-between
           opacity-0
           transition-opacity duration-200
           group-hover:opacity-100
         "
       >
-        <h3 className="text-white font-bold text-lg">{title}</h3>
-        <p className="text-white/80 text-sm mt-2 leading-relaxed">
-          {longDescription}
-        </p>
-      </div>
-
-      <a
-        href={githubUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="
-          absolute
-          bottom-4
-          left-1/2
-          -translate-x-1/2
-          opacity-0
-          group-hover:opacity-100
-          transition-opacity
-          duration-200
-          z-10
-        "
-      >
-        <div
-          className="
-            flex items-center gap-2
-            rounded-md
-            bg-black
-            px-4 py-2
-            text-sm
-            font-semibold
-            text-white
-            hover:bg-gray-900
-            transition-colors
-          "
-        >
-          <Github size={16} />
-          View on GitHub
+        <div>
+          <h3 className="text-white font-bold text-lg">{title}</h3>
+          <p className="text-white/80 text-sm mt-2 leading-relaxed">{longDescription}</p>
         </div>
-      </a>
+
+        <div className="flex gap-2">
+          {githubUrl && (
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <div className="
+                flex items-center gap-2
+                rounded-md
+                bg-black
+                px-4 py-2
+                text-sm
+                font-semibold
+                text-white
+                hover:bg-gray-900
+                transition-colors
+              ">
+                <Github size={16} />
+                View on GitHub
+              </div>
+            </a>
+          )}
+
+          {projectUrl && (
+            <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+              <div className="
+                flex items-center gap-2
+                rounded-md
+                bg-black
+                px-4 py-2
+                text-sm
+                font-semibold
+                text-white
+                hover:bg-gray-900
+                transition-colors
+              ">
+                <ExternalLink size={16} />
+                Visit Project
+              </div>
+            </a>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

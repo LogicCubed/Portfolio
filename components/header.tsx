@@ -31,7 +31,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="w-full bg-[#111112] px-4 md:px-8">
+    <header className="w-full bg-[#0a0a0a] px-4 md:px-8">
       <div className="flex items-center justify-between h-20">
         <div className="flex items-center space-x-6 md:space-x-12 w-full md:w-auto">
           <Image src="/images/logo.png" alt="Logo" width={64} height={64} />

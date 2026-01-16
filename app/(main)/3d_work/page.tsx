@@ -1,5 +1,6 @@
-import Slideshow from "@/components/slideshow";
+import Slideshow from "@/components/ui/slideshow";
 import DioramaCarousel from "@/components/ui/diorama-carousel";
+import ArtGrid from "@/components/ui/art-grid";
 
 export default function ThreeDWork() {
   return (
@@ -11,10 +12,15 @@ export default function ThreeDWork() {
             { image: "/images/3d_renders/offroad_diorama.png" },
           ]}
         />
-        <div className="flex justify-center overflow-hidden my-12">
+        <div className="flex justify-center overflow-hidden my-6">
           <DioramaCarousel />
         </div>
-        <div className="w-[80%] h-px bg-slate-600 my-6 mt-10 mb-30 mx-auto"></div>
+
+        <div className="w-[80%] h-px bg-slate-600 my-6 mt-5 mb-20 mx-auto"></div>
+
+        <div>
+          <ArtGrid />
+        </div>
     </div>
   );
 }
