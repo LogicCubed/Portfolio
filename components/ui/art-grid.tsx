@@ -10,11 +10,12 @@ export default function ArtGrid() {
         <ArtCard title="Robotic Kraken" image="/images/3d_renders/robotic_kraken.png" />
         <ArtCard title="Robotic Angler" image="/images/3d_renders/robotic_angler.png" />
         <ArtCard title="Mining Spaceship" image="/images/3d_renders/orion_spaceship.png" />
+        <ArtCard title="Red Spacecraft" image="/images/3d_renders/red_spacecraft.png" />
+        <ArtCard title="Rattler Drone" image="/images/3d_renders/rattler_drone.png" />
         <ArtCard title="Police Car" image="/images/3d_renders/police_car.png" />
         <ArtCard title="Rolls Royce" image="/images/3d_renders/rolls_royce.png" />
         <ArtCard title="Cryo Gun" image="/images/3d_renders/cryo_gun.png" />
         <ArtCard title="Space Blaster" image="/images/3d_renders/starlord_blaster.png" />
-
       </div>
     </div>
   );

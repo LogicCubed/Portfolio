@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Download, Github, Linkedin, Mail, MapPin } from "lucide-react";
-import { ContactButton } from "./ui/contact-button";
+import { ContactButton } from "./contact-button";
 
 export default function ProfileHeader() {
   return (

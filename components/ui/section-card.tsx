@@ -10,7 +10,7 @@ type SectionCardProps = {
   title: string;
   subtitle?: string;
   date?: string;
-  description?: string;
+  description?: React.ReactNode;
 };
 
 export default function SectionCard({

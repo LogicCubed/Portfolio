@@ -1,4 +1,4 @@
-import ProfileHeader from "@/components/profile-header";
+import ProfileHeader from "@/components/ui/profile-header";
 import ScrollIn from "@/components/ui/scroll-in";
 import SectionCard from "@/components/ui/section-card";
 

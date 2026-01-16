@@ -55,7 +55,7 @@ export default function Diorama({ modelPath }: DioramaProps) {
     const onMouseMove = (e: MouseEvent) => {
       const rect = container.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width;
-      targetX = (x - 0.5) * 2;
+      targetX = (x - 0.5) * 3;
     };
 
     container.addEventListener("mousemove", onMouseMove);

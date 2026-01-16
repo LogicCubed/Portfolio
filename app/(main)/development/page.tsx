@@ -78,7 +78,6 @@ export default function Development() {
               githubUrl="https://github.com/LogicCubed/Brine-Knight"
               imageUrl="/images/project_cards/the_legend_of_tim.png"
             />
-            {/* Other ProjectCards */}
           </div>
         </div>
       </div>
