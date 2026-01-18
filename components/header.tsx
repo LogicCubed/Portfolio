@@ -47,7 +47,6 @@ export const Header = () => {
             {link("/development", "Development")}
             {link("/3d_work", "3D Work")}
             {link("/ventures", "Ventures")}
-            {link("/about_me", "About Me")}
           </nav>
         </div>
 
