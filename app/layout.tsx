@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Johann Ocuaman | Developer & 3D Artist",
-  description: "Interactive portfolio",
+  description: "Portfolio showcasing development, 3D art, and other projects",
 };
 
 export default function RootLayout({
