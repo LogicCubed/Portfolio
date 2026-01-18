@@ -13,7 +13,7 @@ export default function Development() {
       />
 
       <div className="relative z-10">
-        <div className="mt-10 mb-10">
+        <div className="mt-10 mb-20">
           <TechStack />
         </div>
 

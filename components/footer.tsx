@@ -48,14 +48,6 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li><a href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="/docs" className="text-gray-400 hover:text-white transition-colors">Docs</a></li>
-            </ul>
-          </div>
-
-          <div>
             <h3 className="font-bold text-lg mb-4">Other</h3>
             <ul className="space-y-2">
               <li><a href="https://mcmodels.net/vendors/201/unlogic" className="text-gray-400 hover:text-white transition-colors">MC Models</a></li>

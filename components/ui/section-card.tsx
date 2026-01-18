@@ -40,30 +40,33 @@ export default function SectionCard({
           <div className="flex flex-col flex-1 min-w-0">
             <h2 className="text-white text-lg sm:text-xl font-bold">{title}</h2>
             {subtitle && (
-              <p className="text-white/70 text-sm mt-1">{subtitle}</p> 
+              <p className="text-white/70 text-sm mt-1">{subtitle}</p>
             )}
           </div>
         </div>
 
-        <div className="flex flex-row sm:flex-col items-start sm:items-end gap-2 sm:gap-0 mt-2 sm:mt-0">
-          {date && (
-            <p className="text-white/60 text-sm font-semibold">{date}</p>
-          )}
-          {hasDescription && (
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="p-1 text-white/70 hover:text-white cursor-pointer transition-transform"
-            >
-              <ChevronDown
-                size={20}
-                strokeWidth={3}
-                className={`transition-transform duration-300 ${
-                  isOpen ? "rotate-180" : "rotate-0"
-                }`}
-              />
-            </button>
-          )}
-        </div>
+        {/* Only render this container if either date or description exists */}
+        {(date || hasDescription) && (
+          <div className="flex flex-row sm:flex-col items-start sm:items-end gap-2 sm:gap-0 mt-2 sm:mt-0">
+            {date && (
+              <p className="text-white/60 text-sm font-semibold">{date}</p>
+            )}
+            {hasDescription && (
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="p-1 text-white/70 hover:text-white cursor-pointer transition-transform"
+              >
+                <ChevronDown
+                  size={20}
+                  strokeWidth={3}
+                  className={`transition-transform duration-300 ${
+                    isOpen ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </button>
+            )}
+          </div>
+        )}
       </div>
 
       {hasDescription && isOpen && (

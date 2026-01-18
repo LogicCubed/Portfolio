@@ -35,7 +35,12 @@ export const Header = () => {
     <header className="w-full bg-[#0a0a0a] px-4 md:px-8">
       <div className="flex items-center justify-between h-20">
         <div className="flex items-center space-x-6 md:space-x-12 w-full md:w-auto">
-          <Image src="/images/logo.png" alt="Logo" width={64} height={64} />
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            width={64}
+            height={64}
+          />
 
           <nav className="hidden md:flex space-x-12 text-white font-extrabold uppercase text-lg">
             {link("/", "Home")}
@@ -55,12 +60,11 @@ export const Header = () => {
       </div>
 
       {isOpen && (
-        <nav className="flex flex-col md:hidden bg-[#111112] text-white font-bold uppercase text-lg px-4 pb-4 space-y-2">
+        <nav className="flex flex-col md:hidden text-white font-bold uppercase text-lg px-4 pb-4 space-y-2">
           <Link href="/" className="px-2 py-1 w-max">Home</Link>
           <Link href="/development" className="px-2 py-1 w-max">Development</Link>
           <Link href="/3d_work" className="px-2 py-1 w-max">3D Work</Link>
           <Link href="/ventures" className="px-2 py-1 w-max">Ventures</Link>
-          <Link href="/about_me" className="px-2 py-1 w-max">About Me</Link>
         </nav>
       )}
     </header>

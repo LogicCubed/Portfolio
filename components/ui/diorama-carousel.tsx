@@ -51,16 +51,7 @@ export default function DioramaCarousel() {
   const nextIndex = (currentIndex + 1) % items.length;
 
   return (
-    <div className="relative w-full flex items-center justify-center my-12">
-      {/* Left Button */}
-      <button
-        onClick={prev}
-        className="absolute left-0 ml-40 z-10 bg-slate-800 p-3 rounded-full hover:bg-slate-700 transition cursor-pointer"
-      >
-        <ChevronLeftIcon className="w-8 h-8 text-white" strokeWidth={3} />
-      </button>
-
-      {/* Carousel */}
+    <div className="relative w-full flex flex-col items-center justify-center my-12">
       <div className="relative flex items-center justify-center w-full max-w-5xl overflow-visible h-[500px]">
         {/* Previous Card */}
         <motion.div
@@ -97,10 +88,32 @@ export default function DioramaCarousel() {
         </motion.div>
       </div>
 
-      {/* Right Button */}
+      {/* Mobile Buttons */}
+      <div className="flex justify-between w-full max-w-5xl mt-4 md:hidden px-8">
+        <button
+          onClick={prev}
+          className="bg-slate-800 p-3 rounded-full hover:bg-slate-700 transition cursor-pointer"
+        >
+          <ChevronLeftIcon className="w-8 h-8 text-white" strokeWidth={3} />
+        </button>
+        <button
+          onClick={next}
+          className="bg-slate-800 p-3 rounded-full hover:bg-slate-700 transition cursor-pointer"
+        >
+          <ChevronRightIcon className="w-8 h-8 text-white" strokeWidth={3} />
+        </button>
+      </div>
+
+      {/* Desktop Buttons */}
+      <button
+        onClick={prev}
+        className="hidden md:block md:absolute md:left-0 md:ml-40 z-20 bg-slate-800 p-3 rounded-full hover:bg-slate-700 transition cursor-pointer top-1/2 -translate-y-1/2"
+      >
+        <ChevronLeftIcon className="w-8 h-8 text-white" strokeWidth={3} />
+      </button>
       <button
         onClick={next}
-        className="absolute right-0 mr-40 z-10 bg-slate-800 p-3 rounded-full hover:bg-slate-700 transition cursor-pointer"
+        className="hidden md:block md:absolute md:right-0 md:mr-40 z-20 bg-slate-800 p-3 rounded-full hover:bg-slate-700 transition cursor-pointer top-1/2 -translate-y-1/2"
       >
         <ChevronRightIcon className="w-8 h-8 text-white" strokeWidth={3} />
       </button>
