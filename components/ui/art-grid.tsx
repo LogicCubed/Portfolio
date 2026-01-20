@@ -7,6 +7,8 @@ export default function ArtGrid() {
         <ArtCard title="T60 Helmet" image="/images/3d_renders/t60_helmet.png" />
         <ArtCard title="Hollow Knight" image="/images/3d_renders/hollow_knight.png" />
         <ArtCard title="Wumpus" image="/images/3d_renders/wumpus.png" />
+        <ArtCard title="Pochita" image="/images/3d_renders/pochita.png" />
+        <ArtCard title="Inverted Spear of Heaven" image="/images/3d_renders/inverted_spear_of_heaven.png" />
         <ArtCard title="Robotic Kraken" image="/images/3d_renders/robotic_kraken.png" />
         <ArtCard title="Robotic Angler" image="/images/3d_renders/robotic_angler.png" />
         <ArtCard title="Mining Spaceship" image="/images/3d_renders/orion_spaceship.png" />

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://logiccubed.com
+
+# Sitemaps
+Sitemap: https://logiccubed.com/sitemap.xml

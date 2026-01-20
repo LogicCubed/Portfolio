@@ -7,9 +7,18 @@ export default function ThreeDWork() {
     <div className="mb-75">
         <Slideshow
           slides={[
-            { image: "/images/3d_renders/dragon_diorama.png" },
-            { image: "/images/3d_renders/t60_helmet.png" },
-            { image: "/images/3d_renders/offroad_diorama.png" },
+            {
+              image: "/images/3d_renders/t60_helmet.png",
+            },
+            {
+              image: "/images/3d_renders/inverted_spear_of_heaven.png",
+            },
+            {
+              image: "/images/3d_renders/pochita.png",
+            },
+            {
+              image: "/images/3d_renders/dragon_diorama.png"
+            },
           ]}
         />
         <div className="flex justify-center overflow-hidden my-6">
