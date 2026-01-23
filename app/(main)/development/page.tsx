@@ -51,6 +51,13 @@ export default function Development() {
               imageUrl="/images/project_cards/gratuity.png"
             />
             <ProjectCard
+              title="Electron Planner"
+              shortDescription="Personal Organizer"
+              longDescription="A custom organizer & notes app developed with electron to help me organize between school work, homework, personal work, and more"
+              githubUrl="https://github.com/LogicCubed/Electron-Planner"
+              imageUrl="/images/project_cards/electron-planner.png"
+            />
+            <ProjectCard
               title="Soft School App"
               shortDescription="Mobile version of Soft School"
               longDescription="A mobile version of Soft School to demonstrate cross-platform development"
